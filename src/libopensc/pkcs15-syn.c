@@ -59,12 +59,13 @@ struct sc_pkcs15_emulator_handler builtin_emulators[] = {
 	{ "esteid2025", sc_pkcs15emu_esteid2025_init_ex	},
 	{ "skeid",      sc_pkcs15emu_skeid_init_ex      },
 	{ "cardos",     sc_pkcs15emu_cardos_init_ex	},
-	{ "nqapplet",   sc_pkcs15emu_nqapplet_init_ex },
+	{ "nqapplet",   sc_pkcs15emu_nqapplet_init_ex   },
 	{ "esign",      sc_pkcs15emu_starcos_esign_init_ex },
 	{ "eOI",        sc_pkcs15emu_eoi_init_ex },
 	{ "dtrust",     sc_pkcs15emu_dtrust_init_ex },
 	{ "lteid",      sc_pkcs15emu_lteid_init_ex },
 	{ "srbeid",     sc_pkcs15emu_srbeid_init_ex },
+	{ "mdeid2025",  sc_pkcs15emu_mdeid2025_init_ex },
 	{ NULL, NULL }
 };
 
@@ -129,6 +130,7 @@ int sc_pkcs15_is_emulation_only(sc_card_t *card)
 		case SC_CARD_TYPE_DTRUST_V5_1_M100:
 		case SC_CARD_TYPE_DTRUST_V5_4_MULTI:
 		case SC_CARD_TYPE_LTEID:
+		case SC_CARD_TYPE_MDEID_2025:
 			return 1;
 		default:
 			return 0;

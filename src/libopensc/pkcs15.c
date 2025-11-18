@@ -1253,6 +1253,7 @@ const char *pkcs15_get_default_use_file_cache(struct sc_card *card)
 			"tcos",
 			"dtrust",
 			"lteid",
+			"mdeid2025",
 	};
 
 	if (NULL == card || NULL == card->driver || NULL == card->driver->short_name)
