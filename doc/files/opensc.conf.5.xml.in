@@ -1320,7 +1320,8 @@ app <replaceable>application</replaceable> {
 							<literal>npa</literal>,
 							<literal>nqapplet</literal>,
 							<literal>tcos</literal>,
-							<literal>dtrust</literal> and otherwise <literal>no</literal>).
+							<literal>dtrust</literal>,
+							<literal>mdeid2025</literal> and otherwise <literal>no</literal>).
 						</para>
 						<para>
 							If caching is done by a system process, the
