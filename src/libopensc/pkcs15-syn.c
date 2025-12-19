@@ -59,11 +59,11 @@ struct sc_pkcs15_emulator_handler builtin_emulators[] = {
 	{ "esteid2025", sc_pkcs15emu_esteid2025_init_ex	},
 	{ "skeid",      sc_pkcs15emu_skeid_init_ex      },
 	{ "cardos",     sc_pkcs15emu_cardos_init_ex	},
-	{ "nqapplet",   sc_pkcs15emu_nqapplet_init_ex   },
+	{ "nqapplet",   sc_pkcs15emu_nqapplet_init_ex },
 	{ "esign",      sc_pkcs15emu_starcos_esign_init_ex },
-	{ "eOI",        sc_pkcs15emu_eoi_init_ex        },
-	{ "dtrust",     sc_pkcs15emu_dtrust_init_ex     },
-	{ "mdeid2025",  sc_pkcs15emu_mdeid2025_init_ex	},
+	{ "eOI",        sc_pkcs15emu_eoi_init_ex },
+	{ "dtrust",     sc_pkcs15emu_dtrust_init_ex },
+	{ "mdeid",	sc_pkcs15emu_mdeid_init_ex	},
 	{ NULL, NULL }
 };
 

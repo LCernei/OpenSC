@@ -1321,7 +1321,7 @@ app <replaceable>application</replaceable> {
 							<literal>nqapplet</literal>,
 							<literal>tcos</literal>,
 							<literal>dtrust</literal>,
-							<literal>mdeid2025</literal> and otherwise <literal>no</literal>).
+							<literal>mdeid</literal> and otherwise <literal>no</literal>).
 						</para>
 						<para>
 							If caching is done by a system process, the

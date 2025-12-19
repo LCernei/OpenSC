@@ -1,7 +1,7 @@
 /*
- * Driver for Moldova Identity Card issued from March 2025.
+ * Driver for Moldova Identity Card.
  *
- * Copyright (C) 2025, Liviu Cernei <cernei.liviu@gmail.com>
+ * Copyright (C) 2026, Liviu Cernei <cernei.liviu@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -42,7 +42,7 @@ static const struct sc_aid INIT_AID = {
 static const struct sc_card_operations *iso_ops = NULL;
 static struct sc_card_operations mdeid_ops;
 
-static struct sc_card_driver mdeid_driver = {"MDeID 2025", "mdeid2025", &mdeid_ops, NULL, 0, NULL};
+static struct sc_card_driver mdeid_driver = {"MDeID 2025", "mdeid", &mdeid_ops, NULL, 0, NULL};
 
 #define SC_TRANSMIT_TEST_RET(card, apdu, text) \
 	do { \
@@ -119,7 +119,7 @@ mdeid_logout(sc_card_t *card)
 }
 
 struct sc_card_driver *
-sc_get_mdeid2025_driver(void)
+sc_get_mdeid_driver(void)
 {
 	struct sc_card_driver *iso_drv = sc_get_iso7816_driver();
 
