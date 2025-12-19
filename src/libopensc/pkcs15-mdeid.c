@@ -1,7 +1,7 @@
 /*
- * PKCS15 emulation layer for Moldova Identity card issued from March 2025.
+ * PKCS15 emulation layer for Moldova Identity card.
  *
- * Copyright (C) 2025, Liviu Cernei <cernei.liviu@gmail.com>
+ * Copyright (C) 2026, Liviu Cernei <cernei.liviu@gmail.com>
  *
  * This library is free software; you can redistribute it and/or
  * modify it under the terms of the GNU Lesser General Public
@@ -37,7 +37,7 @@ static const struct sc_aid GENERIC_AID = {
 };
 
 static int
-sc_pkcs15emu_mdeid2025_init(sc_pkcs15_card_t *p15card)
+sc_pkcs15emu_mdeid_init(sc_pkcs15_card_t *p15card)
 {
 	sc_card_t *card = p15card->card;
 	int r;
@@ -63,9 +63,9 @@ err:
 	LOG_FUNC_RETURN(p15card->card->ctx, r);
 }
 
-int sc_pkcs15emu_mdeid2025_init_ex(sc_pkcs15_card_t *p15card, struct sc_aid *aid) {
+int sc_pkcs15emu_mdeid_init_ex(sc_pkcs15_card_t *p15card, struct sc_aid *aid) {
 	if (p15card->card->type == SC_CARD_TYPE_MDEID_2025) {
-		return sc_pkcs15emu_mdeid2025_init(p15card);
+		return sc_pkcs15emu_mdeid_init(p15card);
 	}
 	return SC_ERROR_WRONG_CARD;
 }
