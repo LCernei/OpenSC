@@ -278,6 +278,10 @@ enum {
 	SC_CARD_TYPE_DTRUST_V5_1_M100,
 	SC_CARD_TYPE_DTRUST_V5_4_STD,
 	SC_CARD_TYPE_DTRUST_V5_4_MULTI,
+
+	// Moldova eID cards
+	SC_CARD_TYPE_MDEID_BASE = 43000,
+	SC_CARD_TYPE_MDEID_2025,
 };
 
 extern sc_card_driver_t *sc_get_default_driver(void);
@@ -322,6 +326,7 @@ extern sc_card_driver_t *sc_get_nqApplet_driver(void);
 extern sc_card_driver_t *sc_get_skeid_driver(void);
 extern sc_card_driver_t *sc_get_eoi_driver(void);
 extern sc_card_driver_t *sc_get_dtrust_driver(void);
+extern sc_card_driver_t *sc_get_mdeid_driver(void);
 
 #ifdef __cplusplus
 }

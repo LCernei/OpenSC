@@ -154,6 +154,7 @@ static const struct _sc_driver_entry internal_card_drivers[] = {
 	{ "cac",	(void *(*)(void)) sc_get_cac_driver },
 	{ "itacns",	(void *(*)(void)) sc_get_itacns_driver },
 	{ "isoApplet",	(void *(*)(void)) sc_get_isoApplet_driver },
+	{ "mdeid",	(void *(*)(void)) sc_get_mdeid_driver },
 #ifdef ENABLE_ZLIB
 	{ "gids",	(void *(*)(void)) sc_get_gids_driver },
 #endif
