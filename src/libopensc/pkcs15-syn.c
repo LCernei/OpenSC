@@ -65,6 +65,7 @@ struct sc_pkcs15_emulator_handler builtin_emulators[] = {
 	{ "dtrust",     sc_pkcs15emu_dtrust_init_ex },
 	{ "lteid",      sc_pkcs15emu_lteid_init_ex },
 	{ "srbeid",     sc_pkcs15emu_srbeid_init_ex },
+	{ "mdeid",      sc_pkcs15emu_mdeid_init_ex },
 	{ NULL, NULL }
 };
 
@@ -129,6 +130,7 @@ int sc_pkcs15_is_emulation_only(sc_card_t *card)
 		case SC_CARD_TYPE_DTRUST_V5_1_M100:
 		case SC_CARD_TYPE_DTRUST_V5_4_MULTI:
 		case SC_CARD_TYPE_LTEID:
+		case SC_CARD_TYPE_MDEID_2025:
 			return 1;
 		default:
 			return 0;

@@ -287,6 +287,10 @@ enum {
 
 	/* Serbian cards (CardEdge PKI applet) */
 	SC_CARD_TYPE_SRBEID_BASE = 44000,
+
+	/* Moldova eID cards */
+	SC_CARD_TYPE_MDEID_BASE = 45000,
+	SC_CARD_TYPE_MDEID_2025,
 };
 
 extern sc_card_driver_t *sc_get_default_driver(void);
@@ -333,6 +337,7 @@ extern sc_card_driver_t *sc_get_eoi_driver(void);
 extern sc_card_driver_t *sc_get_dtrust_driver(void);
 extern sc_card_driver_t *sc_get_lteid_driver(void);
 extern sc_card_driver_t *sc_get_srbeid_driver(void);
+extern sc_card_driver_t *sc_get_mdeid_driver(void);
 
 #ifdef __cplusplus
 }
