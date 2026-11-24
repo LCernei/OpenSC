@@ -173,6 +173,7 @@ static const struct _sc_driver_entry internal_card_drivers[] = {
 	{ "eOI",	(void *(*)(void)) sc_get_eoi_driver },
 #endif
 	{ "cedulauy",	(void *(*)(void)) sc_get_cedulauy_driver },
+	{ "mdeid",	(void *(*)(void)) sc_get_mdeid_driver },
 	/* The default driver should be last, as it handles all the
 	 * unrecognized cards. */
 	{ "default",	(void *(*)(void)) sc_get_default_driver },
